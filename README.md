@@ -25,4 +25,4 @@ FDMC е учебен ASP.NET Core MVC проект, който демонстр�
 
 ### 1. Клониране на проекта
 ```bash
-git clone https://github.com/USERNAME/FDMC.git
+git clone https://github.com/ilkoiliev/FDMC.git
