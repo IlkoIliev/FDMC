@@ -1,0 +1,22 @@
+﻿@model FDMC.Models.Cat
+
+<h1>Add a New Cat</h1>
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="number" />
+    </div>
+    <div>
+        <label asp-for="Breed"></label>
+        <input asp-for="Breed" />
+    </div>
+    <div>
+        <label asp-for="ImageUrl"></label>
+        <input asp-for="ImageUrl" />
+    </div>
+    <button type="submit">Add Cat</button>
+</form>

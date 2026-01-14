@@ -1,0 +1,11 @@
+﻿@model FDMC.Models.Cat
+
+<h1>@Model.Name</h1>
+
+<img src="@Model.ImageUrl" alt="@Model.Name" style="width:500px;height:auto;" />
+<p>
+    <strong>Age:</strong> @Model.Age <br>
+    <strong>Breed:</strong> @Model.Breed
+</p>
+
+<a asp-controller="Cats" asp-action="Index">Back to List</a>

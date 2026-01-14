@@ -1,0 +1,18 @@
+﻿@model List<FDMC.Models.Cat>
+
+<h1>Fluffy Duffy Munchkin Cats </h1>
+
+<ul>
+    @foreach (var cat in Model)
+    {
+        <li>
+            <img src="@cat.ImageUrl" alt="@cat.Name" style="width:100px;height:auto;" />
+            <h2>@cat.Name</h2>
+            <p>Age: @cat.Age</p>
+            <p>Breed: @cat.Breed</p>
+            <a asp-controller="Cats" asp-action="Details" asp-route-id="@cat.Id">View Details</a> |
+            <a asp-controller="Cats" asp-action="Edit" asp-route-id="@cat.Id">Edit</a>
+        </li>
+    }
+</ul>
+<a asp-controller="Cats" asp-action="Create">Add New Cat</a>
